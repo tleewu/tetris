@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <canvas id="game-canvas" width="300" height="600"></canvas>
+    <script src="lib/piece.js"></script>
+    <script src="lib/util.js"></script>
+    <script src="lib/tPiece.js"></script>
+    <script src="lib/lPiece.js"></script>
+    <script src="lib/invertedLPiece.js"></script>
+    <script src="lib/chairPiece.js"></script>
+    <script src="lib/invertedChairPiece.js"></script>
+    <script src="lib/squarePiece.js"></script>
+    <script src="lib/straightPiece.js"></script>
+    <script src="lib/game.js"></script>
+    <!-- <script src="lib/keymaster.js"></script> -->
+    <script src="lib/gameView.js"></script>
+    <script>
+      var canvasEl = document.getElementById("game-canvas");
+      var ctx = canvasEl.getContext('2d');
+      var game = new Tetris.GameView(new Tetris.Game(), ctx);
+      game.start();
+    </script>
+  </body>
+</html>
