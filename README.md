@@ -6,7 +6,7 @@ You can play it [here] (www.theowu.me/tetris).
 
 ### Main Challenges
 
-<b> Challenge 1: </b> Managing the relationships amongst pieces 
+<b> Challenge 1: </b> Managing the relationships amongst pieces
 - This initial structure is essential for determining when a player can move a piece or not or figuring out when a falling piece has stopped and the game needs to instantiate another piece.
 
 <b> My Solution: </b>
@@ -98,3 +98,9 @@ if (this.game.isAnIllegalMove(newPos)){
     this.rotate();
   }
 ```
+
+### Features to be Implemented
+
+* Optimize game to reduce flickering.
+* Include player score and levels.
+* Show 'next' piece.
