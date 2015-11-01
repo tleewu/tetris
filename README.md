@@ -6,7 +6,7 @@ You can play it [here] (www.theowu.me/tetris).
 
 ### Main Challenges
 
-<b> Challenge 1: Managing the relationships amongst pieces </b>
+<b> Challenge 1: </b> Managing the relationships amongst pieces 
 - This initial structure is essential for determining when a player can move a piece or not or figuring out when a falling piece has stopped and the game needs to instantiate another piece.
 
 <b> My Solution: </b>
@@ -36,7 +36,7 @@ for (var i = 0; i < arrayOfGridPositions.length; i++) {
 }
 ```
 
-<b> Challenge 2: Rotating pieces </b>
+<b> Challenge 2: </b>  Rotating pieces
 - Yeah, it's pretty easy for square and straight pieces because the rotations are pretty minimal. But the other pieces involved a little bit more math.
 
 <b> My Solution: </b>
@@ -50,7 +50,7 @@ var positionsToAddToCenter = [[2*parseInt(Math.sin(angle).toFixed()), 2*parseInt
 ```
 By adjusting the other parts in relationship to the center, I could map out a piece at any rotation.
 
-<b> Challenge 3: Hard Drop </b>
+<b> Challenge 3: </b> Hard Drop
 - In Tetris, a hard drop causes the piece to fall straight down.
 
 <b> My Solution: </b>
@@ -71,7 +71,7 @@ while (!newPos || !this.game.isAnIllegalMove(newPos)) {
 return [hardHit-1, 0];
 ```
 
-<b> Challenge 4: Wall Kick </b>
+<b> Challenge 4: </b> Wall Kick
 - I took this feature for granted when I normally play the game, and it wasn't until one of my close friends pointed that my game was missing it. I'm not great at explaining what a wall kick is, so I'll refer you to [this] (www.tetris.wikia.com/wiki/Wall_kick).
 
 <b> My Solution: </b>
@@ -97,4 +97,4 @@ if (this.game.isAnIllegalMove(newPos)){
     }
     this.rotate();
   }
-``` 
+```
