@@ -2,7 +2,7 @@
 
 Tetris is a childhood favorite of mine, and I just had to build this. This game is built in Javascript and HTML5 Canvas.
 
-You can play it [here] (www.theowu.me/tetris).
+You can play it [here] (https://www.theowu.me/tetris).
 
 ### Main Challenges
 
